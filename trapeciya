@@ -1,5 +1,4 @@
 #include<iostream>
-#include<math.h>
 using namespace std;
 void perimetr(float a, float b, float c, float d) {
 	float p;
