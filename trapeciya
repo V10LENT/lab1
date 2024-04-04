@@ -1,0 +1,39 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+void perimetr(float a, float b, float c, float d) {
+	float p;
+	p = a + b + c + d;
+	cout << "периметр трапеции = " << p << endl;
+}
+void ploshad(int a, int b, int c, int d) {
+	float s;
+	float h;
+	h = sqrt(c ^ 2 - (((a - b) ^ 2 + c ^ 2 - d ^ 2) / 2 * (a - b)) ^ 2);
+	s = ((static_cast<float>(a) + b) / 2) * h;
+	cout << "площадь трапеции = " << s << endl;
+}
+void srednyaya(float a, float b) {
+	float l;
+	l = (static_cast<float>(a) + static_cast<float>(b)) / 2;
+	cout << "средняя линия трапеции = " << l << endl;
+}
+int main() {
+	setlocale(LC_ALL, "RU");
+	float a;
+	float b;
+	float c;
+	float d;
+	cout << ("введите нижнее основание: ");
+	cin >> a;
+	cout << ("введите верхнее основание: ");
+	cin >> b;
+	cout << ("введите боковую сторону: ");
+	cin >> d;
+	cout << ("введите боковую сторону: ");
+	cin >> c;
+	perimetr(a, b, c, d);
+	ploshad(a, b, c, d);
+	srednyaya(a, b);
+	return 0;
+}
