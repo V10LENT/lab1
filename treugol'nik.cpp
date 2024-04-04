@@ -14,7 +14,7 @@ void PloshadGERONa(float a, float b, float c) {
 }
 
 void Ravnobedrennost(float a, float b, float c) {
-    if (a == b  b == c  a == c) {//Проверка на равнобедренность
+    if (a == b || b == c || a == c) {//Проверка на равнобедренность
         cout << "Треугольник является равнобедренным" << endl;
     }
     else {
