@@ -27,7 +27,7 @@ int main() {
     float a, b, c;
     cout << "Введите стороны треугольника: " << endl;
     cin >> a >> b >> c;
-    if (((a + b) > c && (b + c) > a && (a + c) > b) && (a > 0 || b > 0 || c > 0)) {
+    if (((a + b) > c && (b + c) > a && (a + c) > b) && (a > 0 || b > 0 || c > 0)) {//Проверка на правильность ввода параметров
         Perimetr(a, b, c);
         PloshadGERONa(a, b, c);
         Ravnobedrennost(a, b, c);
