@@ -31,8 +31,13 @@ int main() {
 	cin >> d;
 	cout << ("введите боковую сторону: ");
 	cin >> c;
-	perimetr(a, b, c, d);
-	ploshad(a, b, c, d);
-	srednyaya(a, b);
+	if (a <= 0 || b <= 0 || c <= 0 || d <= 0) {
+		cout << "введено недопустимое значение длины";
+	}
+	else {
+		perimetr(a, b, c, d);
+		ploshad(a, b, c, d);
+		srednyaya(a, b);
+	}
 	return 0;
 }
